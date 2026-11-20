@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Zé Dose e a Torre da Ressaca</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="c" width="960" height="540"></canvas>
+
+  <!-- TELA INICIAL -->
+  <div id="menu" class="ov">
+    <div class="box">
+      <h1>ZÉ DOSE</h1><h3>e a Torre da Ressaca</h3>
+      <p>Em <b>Bebedolândia</b>, uma destilaria experimental explodiu e espalhou as bebidas mágicas do Grande Barman. Zé acordou numa taverna destruída sem lembrar de nada. Reúna as 7 bebidas lendárias e suba a Torre!</p>
+      <button id="bStart">▶ Novo Jogo</button>
+      <button id="bCont">⟳ Continuar</button>
+      <p class="help">← → / A D mover · ESPAÇO pular · SHIFT correr · E poder · 1-7 ou Q escolher poder · ESC pausa<br><small>As bebidas são itens mágicos fictícios: basta coletar. Sem consumo real de álcool!</small></p>
+    </div>
+  </div>
+
+  <!-- PAUSA -->
+  <div id="pause" class="ov hide"><div class="box"><h2>PAUSADO</h2>
+    <button id="bResume">Continuar</button><button id="bRetry">Reiniciar fase</button></div></div>
+
+  <!-- VITÓRIA / DERROTA -->
+  <div id="end" class="ov hide"><div class="box"><h2 id="eT"></h2><p id="eP"></p>
+    <button id="bAgain">Reiniciar</button></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
